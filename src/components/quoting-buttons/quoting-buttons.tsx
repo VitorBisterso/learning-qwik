@@ -30,9 +30,11 @@ export default component$(() => {
    })
 
    const getQuotation = $(async (fromCurrency: CurrencyType, toCurrency: CurrencyType) => {
-      const res = await fetch(`${URL}/${fromCurrency}-${toCurrency}`);
-      const json = await res.json();
+      state.isLoading = true
+      const res = await fetch(`${URL}/${fromCurrency}-${toCurrency}`)
+      const json = await res.json()
       state.apiResponse = json[`${fromCurrency}${toCurrency}`]
+      state.isLoading = false
    })
 
    return (
