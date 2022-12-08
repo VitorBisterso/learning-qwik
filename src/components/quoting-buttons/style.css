@@ -1,0 +1,17 @@
+.container {
+   display: flex;
+   flex: 1;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 5vh;
+   padding-bottom: 2vh;
+}
+
+.currency-container {
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   margin-top: 3vh;
+   padding-top: 2vh;
+   border-top: 1px solid rgba(37, 37, 37, 0.5);
+}

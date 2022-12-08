@@ -1,16 +1,19 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
+import QuotingButtons from '~/components/quoting-buttons/quoting-buttons';
+
 export default component$(() => {
   return (
     <div>
-      <p>Parte principal</p>
+      <h2>Bem vindo! Escolha qual das cotações gostaria de visualizar!</h2>
+      <QuotingButtons />
     </div>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Página inicial',
+  title: 'Cotação de moedas',
   meta: [
     {
       name: 'initial',
